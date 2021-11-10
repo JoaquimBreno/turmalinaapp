@@ -1,4 +1,3 @@
-import { MapLeafComponent } from './../../../../../turmalina/src/app/mapleaf/mapleaf.component';
 import { Component, OnInit } from '@angular/core';
 import { MapleafService } from './mapleaf.service';
 import { map, startWith } from 'rxjs/operators';

@@ -32,7 +32,7 @@ export class ContractComponent  {
   Esse é um exemplo em HTML utilizando table
   
   \`\`\`html
-  <table itemscope itemtype="Unipt.org/Contract">
+  <table itemscope itemtype="http://turmalinaschema.org/Contract">
       <!-- Cabeçalho da tabela  -->
       <tr>
           <th itemprop="managementUnitName">Nome da unidade gestora</th>
@@ -66,7 +66,7 @@ export class ContractComponent  {
   Esse é um exemplo em HTML utilizando div
   
   \`\`\`html
-  <div itemscope itemtype="Unipt.org/Contract">
+  <div itemscope itemtype="http://turmalinaschema.org/Contract">
     <!-- Cabeçalho da tabela  -->
     <div>
       <div itemprop="managementUnitName">Nome da unidade gestora</div>

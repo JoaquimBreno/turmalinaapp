@@ -29,7 +29,7 @@ export class AgreementComponent {
     
     Esse é um exemplo em HTML utilizando table
     \`\`\`html
-    <table itemscope itemtype="Unipt.org/Agreement">
+    <table itemscope itemtype="http://turmalinaschema.org/Agreement">
         <!-- Cabeçalho da tabela  -->
         <tr>
             <th itemprop="agreementID">Número do Convênio</th>
@@ -62,7 +62,7 @@ export class AgreementComponent {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="Unipt.org/Agreement">
+    <div itemscope itemtype="http://turmalinaschema.org/Agreement">
         <!-- Cabeçalho da tabela  -->
         <div>
             <div itemprop="agreementID">Número do Convênio</div>

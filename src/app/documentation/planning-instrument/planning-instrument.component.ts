@@ -25,7 +25,7 @@ export class PlanningInstrumentComponent {
     
     Esse é um exemplo em HTML utilizando table
     \`\`\`html
-    <table itemscope itemtype="Unipt.org/PlanningInstrument">
+    <table itemscope itemtype="http://turmalinaschema.org/PlanningInstrument">
         <!-- Cabeçalho da tabela  -->
         <tr>
             <th itemprop="multiyearPlan">Plano Plurianual (PPA)</th>
@@ -44,7 +44,7 @@ export class PlanningInstrumentComponent {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="Unipt.org/PlanningInstrument">
+    <div itemscope itemtype="http://turmalinaschema.org/PlanningInstrument">
       <!-- Cabeçalho da tabela  -->
       <div>
         <div itemprop="multiyearPlan">Plano Plurianual (PPA)</div>

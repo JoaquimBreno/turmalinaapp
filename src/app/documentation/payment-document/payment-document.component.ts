@@ -33,7 +33,7 @@ export class PaymentDocumentComponent {
     Esse é um exemplo em HTML utilizando table
     
     \`\`\`html
-    <table itemscope itemtype="Unipt.org/PaymentDocument">
+    <table itemscope itemtype="http://turmalinaschema.org/PaymentDocument">
         <!-- Cabeçalho da tabela  -->
         <tr>
             <th itemprop="managementUnitName">Nome da unidade gestora</th>
@@ -66,7 +66,7 @@ export class PaymentDocumentComponent {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="Unipt.org/PaymentDocument">
+    <div itemscope itemtype="http://turmalinaschema.org/PaymentDocument">
       <!-- Cabeçalho da tabela  -->
       <div>
         <div itemprop="managementUnitName">Nome da unidade gestora</div>

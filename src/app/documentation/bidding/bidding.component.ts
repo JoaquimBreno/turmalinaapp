@@ -34,7 +34,7 @@ export class BiddingComponent {
     Esse é um exemplo em HTML utilizando table
     
     \`\`\`html
-    <table itemscope itemtype="Unipt.org/Bid">
+    <table itemscope itemtype="http://turmalinaschema.org/Bid">
       <!-- Cabeçalho da tabela  -->
       <tr>
         <th itemprop="managementUnitName">Nome da unidade gestora</th>
@@ -71,7 +71,7 @@ export class BiddingComponent {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="Unipt.org/Bid">
+    <div itemscope itemtype="http://turmalinaschema.org/Bid">
       <!-- Cabeçalho da tabela  -->
       <div>
         <div itemprop="managementUnitName">Nome da unidade gestora</div>

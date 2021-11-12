@@ -12,7 +12,6 @@ import { BudgetRevenueComponent } from './budget-revenue/budget-revenue.componen
 import { ExtraBudgetRevenueComponent } from './extra-budget-revenue/extra-budget-revenue.component';
 import { BudgetExpenditureComponent } from './budget-expenditure/budget-expenditure.component';
 import { ExtraBudgetExpenditureComponent } from './extra-budget-expenditure/extra-budget-expenditure.component';
-import { ComittedExpenditureComponent } from './comitted-expenditure/comitted-expenditure.component';
 import { PaymentDocumentComponent } from './payment-document/payment-document.component';
 import { PlanningInstrumentComponent } from './planning-instrument/planning-instrument.component';
 import { BiddingComponent } from './bidding/bidding.component';
@@ -23,7 +22,7 @@ import { ExampleTwoComponent } from './tutorial/example-two/example-two.componen
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [ContractComponent, DocumentationComponent, HomeComponent, TutorialComponent, BudgetRevenueComponent, ExtraBudgetRevenueComponent, BudgetExpenditureComponent, ExtraBudgetExpenditureComponent, ComittedExpenditureComponent, PaymentDocumentComponent, PlanningInstrumentComponent, BiddingComponent, AgreementComponent, EmployeeInformationComponent, ExampleOneComponent, ExampleTwoComponent],
+  declarations: [ContractComponent, DocumentationComponent, HomeComponent, TutorialComponent, BudgetRevenueComponent, ExtraBudgetRevenueComponent, BudgetExpenditureComponent, ExtraBudgetExpenditureComponent, PaymentDocumentComponent, PlanningInstrumentComponent, BiddingComponent, AgreementComponent, EmployeeInformationComponent, ExampleOneComponent, ExampleTwoComponent],
   imports: [
     HttpClientModule,
     CommonModule,

@@ -30,7 +30,7 @@ export class ExtraBudgetRevenueComponent {
     
     Esse é um exemplo em HTML utilizando table
     \`\`\`html
-    <table itemscope itemtype="Unipt.org/ExtraBudgetRevenue">
+    <table itemscope itemtype="http://turmalinaschema.org/ExtraBudgetRevenue">
         <caption>Descrição</caption>
         <!-- Cabeçalho da tabela  -->
         <tr>
@@ -60,7 +60,7 @@ export class ExtraBudgetRevenueComponent {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="Unipt.org/ExtraBudgetRevenue">
+    <div itemscope itemtype="http://turmalinaschema.org/ExtraBudgetRevenue">
       <!-- Cabeçalho da tabela  -->
       <div>
           <div itemprop="extraBudgetRevenueID">Código</div>

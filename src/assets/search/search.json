@@ -20,11 +20,6 @@
     "Url": "/extraBudgetExpenditure"
 },
 {
-    "Type": "Empenho",
-    "Name": "empenho comittedExpenditure budgetaryUnitName budgetaryUnitID identificationNumber creditorName comittedExpenditureHistory",
-    "Url": "/comittedExpenditure"
-},
-{
     "Type": "Documento de Pagamento",
     "Name": "documento de pagamento paymentDocument managementUnitName managementUnitID bankOperationID bankAccountNumber paymentDate identificationNumber creditorName paymentAmount fundingSource paymentHistory",
     "Url": "/paymentDocument"

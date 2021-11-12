@@ -6,7 +6,6 @@ import { AgreementComponent } from './agreement/agreement.component';
 import { BiddingComponent } from './bidding/bidding.component';
 import { BudgetExpenditureComponent } from './budget-expenditure/budget-expenditure.component';
 import { BudgetRevenueComponent } from './budget-revenue/budget-revenue.component';
-import { ComittedExpenditureComponent } from './comitted-expenditure/comitted-expenditure.component';
 import { ContractComponent } from './contract/contract.component';
 import { EmployeeInformationComponent } from './employee-information/employee-information.component';
 import { ExtraBudgetExpenditureComponent } from './extra-budget-expenditure/extra-budget-expenditure.component';
@@ -23,7 +22,6 @@ const routes: Routes = [
     { path: 'bidding', component: BiddingComponent },
     { path: 'budgetExpenditure', component: BudgetExpenditureComponent },
     { path: 'budgetRevenue', component: BudgetRevenueComponent },
-    { path: 'comittedExpenditure', component: ComittedExpenditureComponent },
     { path: 'contract', component: ContractComponent },
     { path: 'employeeInformation', component: EmployeeInformationComponent },
     { path: 'extraBudgetExpenditure', component: ExtraBudgetExpenditureComponent },

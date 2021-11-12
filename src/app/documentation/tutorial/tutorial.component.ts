@@ -38,7 +38,7 @@ export class TutorialComponent {
     | itemtype | O atributo itemtype contém como valor uma URL válida que define o tipo do item e fornece o contexto para as propriedades referentes a ele. | 
     | itemprop | Este atributo define uma propriedade do item. | 
     
-    Como visto, a sintaxe básica inclui os atributos itemscope e itemtype para definir um item, e o atributo itemprop para descrever cada propriedade do item. Sendo os tipos dos itens especificados por meio do atributo itemtype, que assume valores de URLs válidas definidas através do vocabulário de escolha. Neste caso, podem assumir as URLs de cada tipo registrado no vocabulário do Turmalina Schema; por exemplo, o Turmalina Schema define tipos como http://turmalinaschema.org/Bid ou http://turmalinaschema.org/Contracts.
+    Como visto, a sintaxe básica inclui os atributos itemscope e itemtype para definir um item, e o atributo itemprop para descrever cada propriedade do item. Sendo os tipos dos itens especificados por meio do atributo itemtype, que assume valores de URLs válidas definidas através do vocabulário de escolha. Neste caso, podem assumir as URLs de cada tipo registrado no vocabulário do Turmalina Schema; por exemplo, o Turmalina Schema define tipos como https://turmalinaschema.vercel.app/documentation/bidding ou https://turmalinaschema.vercel.app/documentation/contract.
     
     ## Como marcar seu conteúdo usando o Microdata e o Turmalina Schema?
     

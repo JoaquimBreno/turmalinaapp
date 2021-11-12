@@ -28,7 +28,7 @@ export class HomeComponent {
 
     ## Como usar esta documentação?
 
-    Não há maneira errada de ler esta documentação: se você quiser pular, vá em frente! Faça o que melhor funcionar para você. A documentação foi estruturada de forma que cada descrição de tipos e suas respectivas propriedades são independentes uns dos outros, justamente a fim de possibilitar a busca por informações de forma mais rápida e direcionada. Entretanto, recomendamos fortemente que, antes de mais nada, o tutorial inicial seja lido atenciosamente.
+    Não há maneira errada de ler esta documentação: se você quiser pular, vá em frente! Faça o que melhor funcionar para você. A documentação foi estruturada de forma que cada descrição de tipos e suas respectivas propriedades são independentes uns dos outros, justamente a fim de possibilitar a busca por informações de forma mais rápida e direcionada. Entretanto, recomendamos fortemente que, antes de mais nada, o tutorial inicial seja lido atenciosamente para ambientá-los(as) com os primeiros passos utilizando o Turmalina Schema em conjunto com o Microdata.
     `
 
 }

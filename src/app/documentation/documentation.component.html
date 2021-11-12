@@ -1,0 +1,84 @@
+
+<html>
+    <body>
+        <main>
+            <aside class="sidebar"> <!-- SIDE BAR -->
+                <div class="component">
+                    <div class="header">
+                        <form class="navbar-form d-flex justify-content-center">
+                            <input class="navbar-input" id="search" autocomplete="off" [(ngModel)]="userQuery"  [formControl]="queryField" (keyup) = "search()" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+                            <div class="btn btn-outline-dark" id = "button" type="submit" (click) = "search()"><img src="../../assets/images/lupa.png" alt="alternative" width="15" height="15" ></div>
+                        </form>
+                        <ul class = "result" id="result"></ul>
+                    </div>
+                    <div class="content" id="scroll">
+                        <div id = "empty -text" class="empty-text">
+                            <!--*ngFor="let result of results$ | async" -->
+                            <ol id = "ol" >
+                                <li class="nav-item has-submenu" id = "side_nav" *ngIf ="find(userQuery, 'boas vindas home tutorial como começar starting')">
+                                    <a class="nav-link" routerLink="home">Boas vindas</a>
+                                    <ol class="submenu ">
+                                        <!--*ngIf="userQuery === 'abc'"-->
+                                        <li *ngIf ="find(userQuery, 'boas vindas home')">
+                                            <a class="nav-link" routerLink="home">Boas vindas</a>
+                                        </li>
+
+                                        <li *ngIf="find(userQuery, 'tutorial como começar starting')">
+                                            <a class="nav-link" routerLink="tutorial">Como começar</a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="nav-item has-submenu" *ngIf="find(userQuery, 'receita orçamentária budgetRevenue managementUnitName managementUnitID economicCategory revenueSource revenueSpecie revenueRubric revenueParagraph revenueSubparagraph predictedAmount collectionAmount revenueEntryAmount receita extra orçamentária extraBudgetRevenue realizedAmount extraBudgetRevenueID')">
+                                    <a class="nav-link" data-link>Receita </a>
+                                    <ol class="submenu ">
+                                        <li *ngIf="find(userQuery, 'receita orçamentária budgetRevenue managementUnitName managementUnitID economicCategory revenueSource revenueSpecie revenueRubric revenueParagraph revenueSubparagraph predictedAmount collectionAmount revenueEntryAmount')">
+                                            <a class="nav-link" routerLink="budgetRevenue">Receita Orçamentária</a>
+                                        </li>
+                                        <li *ngIf="find(userQuery, 'receita extra orçamentária extraBudgetRevenue realizedAmount extraBudgetRevenueID')">
+                                            <a class="nav-link" routerLink="extraBudgetRevenue">Receita Extraorçamentária</a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="nav-item has-submenu" *ngIf="find(userQuery, 'despesa orçamentária budgetExpenditure managementUnitName managementUnitID function subfunction program action economicCategory source modality element subelement fixedAmount settledAmount paymentAmount identificationNumber bidModality bidID contractID comittedExpenditureID comittedExpenditureObject comittedExpenditureDate paymentInstallmentDate despesa extra orçamentária extraBudgetExpenditure realizedAmount extraBudgetRevenueID documento de pagamento paymentDocument managementUnitName managementUnitID bankOperationID bankAccountNumber paymentDate identificationNumber creditorName paymentAmount fundingSource paymentHistory')">
+                                    <a class="nav-link">Despesas</a>
+                                    <ol class="submenu ">
+                                        <li *ngIf="find(userQuery, 'despesa orçamentária budgetExpenditure managementUnitName managementUnitID function subfunction program action economicCategory source modality element subelement fixedAmount settledAmount paymentAmount identificationNumber bidModality bidID contractID comittedExpenditureID comittedExpenditureObject comittedExpenditureDate paymentInstallmentDate')">
+                                            <a class="nav-link" routerLink="budgetExpenditure">Despesa Orçamentária</a>
+                                        </li>
+                                        <li *ngIf="find(userQuery, 'despesa extra orçamentária extraBudgetExpenditure realizedAmount extraBudgetRevenueID')">
+                                            <a class="nav-link" routerLink="extraBudgetExpenditure">Despesa Extraorçamentária</a>
+                                        </li>
+                                        <li *ngIf="find(userQuery, 'documento de pagamento paymentDocument managementUnitName managementUnitID bankOperationID bankAccountNumber paymentDate identificationNumber creditorName paymentAmount fundingSource paymentHistory')">
+                                            <a class="nav-link" routerLink="paymentDocument">Documento de Pagamento</a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="nav-item has-submenu" *ngIf="find(userQuery, 'contratos contract managementUnitName managementUnitID contractorName identificationNumber publicationDate validityDate contractAmount object contractID')">
+                                    <a class="nav-link" routerLink="contract">Contratos</a>
+                                </li>
+                                <li class="nav-item has-submenu" *ngIf="find(userQuery, 'instrumento de planejamento planningInstrument multiyearPlan budgetGuidelinesLaw')" >
+                                    <a class="nav-link" routerLink="planningInstrument">Instrumento de Planejamento</a>
+                                </li>
+                                <li class="nav-item has-submenu" *ngIf="find(userQuery, 'procedimento licitatório licitatorio bidding managementUnitName managementUnitID bidID bidModality object publicationDate realizationDate bidderName identificationNumber bidderProposalAmount')">
+                                    <a class="nav-link" routerLink="bidding">Procedimentos Licitatórios</a>
+                                </li>
+                                <li class="nav-item has-submenu" *ngIf="find(userQuery, 'convênio convenio agreement agreementID grantorName contractorName celebrationDate publicationDate validityDate object agreementAmount counterpartAmount')">
+                                    <a class="nav-link" routerLink="agreement">Covênios</a>
+                                </li>
+                                <li class="nav-item has-submenu" *ngIf="find(userQuery, 'pessoal employeeInformation employeeName identificationNumber employmentContractType employeePosition employeeSalary')">
+                                    <a class="nav-link" routerLink="employeeInformation">Pessoal</a>
+                                </li>
+                            </ol>
+                        </div>
+                        <ul class="items list"></ul>
+                    </div>
+                </div>
+            </aside> <!-- SIDE BAR -->
+            <article class="components"> <!-- CONTENT -->
+                <div class="container">
+                    <router-outlet></router-outlet>
+                </div>
+            </article> <!-- CONTENT -->
+        </main>
+    </body>
+</html>

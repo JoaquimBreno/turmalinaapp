@@ -32,7 +32,7 @@ export class ContractComponent  {
   Esse é um exemplo em HTML utilizando table
   
   \`\`\`html
-  <table itemscope itemtype="http://turmalinaschema.org/Contract">
+  <table itemscope itemtype="https://turmalinaschema.vercel.app/documentation/contract">
       <!-- Cabeçalho da tabela  -->
       <tr>
           <th itemprop="managementUnitName">Nome da unidade gestora</th>
@@ -66,7 +66,7 @@ export class ContractComponent  {
   Esse é um exemplo em HTML utilizando div
   
   \`\`\`html
-  <div itemscope itemtype="http://turmalinaschema.org/Contract">
+  <div itemscope itemtype="https://turmalinaschema.vercel.app/documentation/contract">
     <!-- Cabeçalho da tabela  -->
     <div>
       <div itemprop="managementUnitName">Nome da unidade gestora</div>

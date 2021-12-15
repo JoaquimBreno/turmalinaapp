@@ -11,11 +11,15 @@ const routes: Routes = [
     path: 'turmalina',
      loadChildren: () => import('./turmalina/turmalina.module').then(m => m.TurmalinaModule) 
   },
+  { 
+    path: 'rank',
+     loadChildren: () => import('./rank/rank.module').then(m => m.RankModule) 
+  },
   {
     path: '',
     redirectTo: 'turmalina',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

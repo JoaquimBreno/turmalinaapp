@@ -44,7 +44,6 @@ body {
     height: 100%;
     font-family: var(--font-family) !important;
     line-height: 1.4;
-    max-width: 2400px;
 }
 
     /*************************/
@@ -67,6 +66,7 @@ a:hover{
 }
 
 .navbar{
+    z-index: 1000;
     width: 100%;
     padding-left: var(--space);
     padding-right: var(--space);
@@ -77,6 +77,10 @@ a:hover{
     justify-content: left!important;
 }
 
+.navbar-documentation{
+    margin-bottom: 1.5rem;
+}
+
 .navbar-toggler-icon{
     margin-right: 15px;
 }
@@ -85,17 +89,18 @@ a:hover{
     padding-right: 2rem;
 }
 
-@media screen and (min-width: 2500px){
+/* @media screen and (min-width: 2500px){
     body{
         margin: 0 15vw!important;
     }
-}
+} */
 
 @media screen and (min-width: 729px){
     .navbar-toggler-icon{
         display: none!important;
     }
 }
+
 
 
 

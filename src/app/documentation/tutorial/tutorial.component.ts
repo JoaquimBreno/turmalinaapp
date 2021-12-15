@@ -38,7 +38,7 @@ export class TutorialComponent {
     | itemtype | O atributo itemtype contém como valor uma URL válida que define o tipo do item e fornece o contexto para as propriedades referentes a ele. | 
     | itemprop | Este atributo define uma propriedade do item. | 
     
-    Como visto, a sintaxe básica inclui os atributos itemscope e itemtype para definir um item, e o atributo itemprop para descrever cada propriedade do item. Sendo os tipos dos itens especificados por meio do atributo itemtype, que assume valores de URLs válidas definidas através do vocabulário de escolha. Neste caso, podem assumir as URLs de cada tipo registrado no vocabulário do Turmalina Schema; por exemplo, o Turmalina Schema define tipos como https://turmalinaschema.vercel.app/documentation/bidding ou https://turmalinaschema.vercel.app/documentation/contract.
+    Como visto, a sintaxe básica inclui os atributos itemscope e itemtype para definir um item, e o atributo itemprop para descrever cada propriedade do item. Sendo os tipos dos itens especificados por meio do atributo itemtype, que assume valores de URLs válidas definidas através do vocabulário de escolha. Neste caso, podem assumir as URLs de cada tipo registrado no vocabulário do Turmalina Schema; por exemplo, o Turmalina Schema define tipos como http://turmalinaschema.org/Bid ou http://turmalinaschema.org/Contracts.
     
     ## Como marcar seu conteúdo usando o Microdata e o Turmalina Schema?
     
@@ -246,7 +246,7 @@ export class TutorialComponent {
     </div>
     \`\`\`
     
-    Ao utilizarmos o itemtype estamos especificando que o item contido nesse bloco é do tipo Bid, ou seja, trata sobre Licitações como definido na documentação de tipos do Turmalina Schema. Como visto, os tipos dos itens são informados como URLs, neste caso https://turmalinaschema.vercel.app/documentation/bidding. <div> </div>
+    Ao utilizarmos o itemtype estamos especificando que o item contido nesse bloco é do tipo Bidding, ou seja, trata sobre Licitações como definido na documentação de tipos do Turmalina Schema. Como visto, os tipos dos itens são informados como URLs, neste caso https://turmalinaschema.vercel.app/documentation/bidding. <div> </div>
     OBS: vale ressaltar que a marcação do item precisa ser feita na tag imediatamente superior a das propriedades. Um exemplo é o caso da table ilustrado anteriormente, nele o itemscope e o itemtype não poderiam ser colocados na div que contém a table, pois é a table a tag imediatamente superior.
     ### Segundo passo: itemprop
     Além de indicarmos o escopo do item no HTML com o itemscope e especificarmos sobre o que é o item com o itemtype, podemos indicar mais informações sobre esse item. No microdata chamamos essas informações adicionais sobre um item de propriedades. Para rotular as propriedades de um item utilizamos o atributo itemprop. Por exemplo, para identificar a modalidade da Licitação no HTML, adicionamos itemprop=”bidModality” ao elemento que envolve o nome da modalidade de licitação.
@@ -322,7 +322,7 @@ export class TutorialComponent {
     \`\`\`
     
     ## Turmalina Schema: tipos e propriedades
-    Durante todo o exemplo anterior, utilizamos o tipo Bid fornecido pelo vocabulário Turmalina Schema. Entretanto, o Turmalina Schema descreve uma variedade de outros tipos, cada um com seu próprio conjunto de propriedades que podem ser utilizadas para descrever os itens. Abaixo segue uma lista com os tipos do Turmalina Schema e seus respectivos links:
+    Durante todo o exemplo anterior, utilizamos o tipo Bidding fornecido pelo vocabulário Turmalina Schema. Entretanto, o Turmalina Schema descreve uma variedade de outros tipos, cada um com seu próprio conjunto de propriedades que podem ser utilizadas para descrever os itens. Abaixo segue uma lista com os tipos do Turmalina Schema e seus respectivos links:
     
     - PlanningInstrument - https://turmalinaschema.vercel.app/documentation/planningInstrument
     - Contract - https://turmalinaschema.vercel.app/documentation/contract
@@ -333,7 +333,8 @@ export class TutorialComponent {
     - ExtraBudgetExpenditure - https://turmalinaschema.vercel.app/documentation/extraBudgetExpenditure
     - EmployeeInformation - https://turmalinaschema.vercel.app/documentation/employeeInformation
     - PaymentDocument - https://turmalinaschema.vercel.app/documentation/paymentDocument
-    
+    - Bidding - https://turmalinaschema.vercel.app/documentation/bidding
+
     Nos links você também pode ver uma lista completa com as propriedades de cada tipo.
     
     ##  O caminho até os dados
@@ -368,7 +369,6 @@ export class TutorialComponent {
     
     \`\`\`html
     <!-- Adição da classe "tm-execute" ao elemento de detalhamento  -->
-    
     <a _ngcontent-xmb-c319 class="tm-execute">04.064/2021</a>
     \`\`\`   
     
@@ -389,8 +389,7 @@ export class TutorialComponent {
     `
     example_one = ` \`\`\`html
     <!--  MENU 1 -->
-    <div itemscope itemtype="https://turmalinaschema.vercel.app/documentation/bidding">
-        <table>
+        <table itemtype="https://turmalinaschema.vercel.app/documentation/bidding>
             <caption>Descrição</caption>
             <!-- Cabeçalho da tabela  -->
             <tr>
@@ -424,8 +423,7 @@ export class TutorialComponent {
 
     example_two = ` \`\`\`html
     <!--  MENU 2 -->
-    <div itemscope itemtype="https://turmalinaschema.vercel.app/documentation/bidding">
-        <div>
+        <div itemtype="https://turmalinaschema.vercel.app/documentation/bidding>
             <caption>Descrição</caption>
             <!-- Cabeçalho da tabela  -->
             <div>

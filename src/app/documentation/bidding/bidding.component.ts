@@ -13,9 +13,9 @@ export class BiddingComponent {
     instructions = `
     # Procedimentos Licitatórios
 
-    ## Tipo: Bid
+    ## Tipo: Bidding
     
-    O tipo referente aos procedimentos licitatórios (Bid) possui diferentes propriedades para representação de informações sobre as licitações públicas, por meio do qual o munícipio pode realizar contratações de obras, serviços, compras e alienações. A seguir estão os nomes de todas as propriedades definidas pelo tipo:
+    O tipo referente aos procedimentos licitatórios (Bidding) possui diferentes propriedades para representação de informações sobre as licitações públicas, por meio do qual o munícipio pode realizar contratações de obras, serviços, compras e alienações. A seguir estão os nomes de todas as propriedades definidas pelo tipo:
     
     | PROPRIEDADE | TIPO ESPERADO | DESCRIÇÃO |
     | ------------- | ------------- | ------------- |
@@ -34,7 +34,7 @@ export class BiddingComponent {
     Esse é um exemplo em HTML utilizando table
     
     \`\`\`html
-    <table itemscope itemtype="http://turmalinaschema.org/Bid">
+    <table itemscope itemtype="https://turmalinaschema.vercel.app/documentation/bidding">
       <!-- Cabeçalho da tabela  -->
       <tr>
         <th itemprop="managementUnitName">Nome da unidade gestora</th>
@@ -71,7 +71,7 @@ export class BiddingComponent {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="http://turmalinaschema.org/Bid">
+    <div itemscope itemtype="https://turmalinaschema.vercel.app/documentation/bidding">
       <!-- Cabeçalho da tabela  -->
       <div>
         <div itemprop="managementUnitName">Nome da unidade gestora</div>

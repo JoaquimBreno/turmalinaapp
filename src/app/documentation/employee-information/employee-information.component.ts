@@ -27,7 +27,7 @@ export class EmployeeInformationComponent  {
     
     Esse é um exemplo em HTML utilizando table
     \`\`\`html
-    <table itemscope itemtype="http://turmalinaschema.org/EmployeeInformation">
+    <table itemscope itemtype="https://turmalinaschema.vercel.app/documentation/employeeInformation">
         <!-- Cabeçalho da tabela  -->
         <tr>
             <th itemprop="employeeName">Nome do Servidor</th>
@@ -50,7 +50,7 @@ export class EmployeeInformationComponent  {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="http://turmalinaschema.org/EmployeeInformation">
+    <div itemscope itemtype="https://turmalinaschema.vercel.app/documentation/employeeInformation">
       <!-- Cabeçalho da tabela  -->
       <div>
         <div itemprop="employeeName">Nome do Servidor</div>

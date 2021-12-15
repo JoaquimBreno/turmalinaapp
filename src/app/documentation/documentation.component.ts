@@ -1,9 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { DocumentationService } from './documentation.service';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { tap, map, filter, debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
-import { menuData } from 'src/assets/search/menuData';
+import menuData from 'src/assets/search/menuData.json';
 
 
 @Component({
@@ -12,6 +9,7 @@ import { menuData } from 'src/assets/search/menuData';
   styleUrls: ['./documentation.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
+
 export class DocumentationComponent implements OnInit{
   title = "Open Web Technology";
   subtitle = "Technical call live coding challenge";
@@ -19,27 +17,20 @@ export class DocumentationComponent implements OnInit{
   userQuery = "";
   queryField = new FormControl();
 
-  /*results$: Observable<any>;
-  readonly FIELDS = 'Type, Name, Url';*/
-
-  constructor(private http: HttpClient, private docService: DocumentationService){}
-
-  ngOnInit(){
-    /*this.queryField.valueChanges
-    .pipe(
-      map(value => value.trim()),
-      filter(value => value.length > 1),
-      debounceTime(200),
-      distinctUntilChanged(),
-      tap(value => console.log(value)),
-      switchMap(value => this.http.get(this.SEARCH_URL, {
-           params:{
-            search: value,
-              fields: this.FIELDS
-           }
-      })),
-    ).subscribe();*/
-  }
+  home = menuData[0].Name;
+  tutorial = menuData[1].Name;
+  revenue = menuData[2].Name;
+  budgetRevenue = menuData[3].Name;
+  extraBudgetRevenue = menuData[4].Name;
+  budget = menuData [5].Name;
+  budgetExpenditure = menuData[6].Name;
+  extraBudgetExpenditure = menuData[7].Name;
+  paymentDocument = menuData[8].Name;
+  contract = menuData[9].Name;
+  planningInstrument = menuData[10].Name;
+  bidding = menuData[11].Name;
+  agreement = menuData[12].Name;
+  employeeInformation = menuData[13].Name;
 
   find(userQuery: string, content: string){
       if(userQuery.length > 0){
@@ -48,21 +39,6 @@ export class DocumentationComponent implements OnInit{
       return true
   }
 
-  search(){
-   /*const fields = 'Type, Name, Url';
-    let value = this.queryField.value;
-    if(value && (value = value.trim()) != ''){
-      console.log(value)
-
-      let params = new HttpParams();
-      params = params.set('search', value);
-      params = params.set('fields', fields);
- 
-     this.results$ = this.http
-       .get(this.SEARCH_URL, {params})
-       .pipe(
-        map((res:any) => res.results)
-      );
-    }*/
-  }
+  ngOnInit(){}
+  
 }

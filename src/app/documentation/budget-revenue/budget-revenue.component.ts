@@ -28,7 +28,7 @@ export class BudgetRevenueComponent {
     
     Esse é um exemplo em HTML utilizando table
     \`\`\`html
-    <table itemscope itemtype="http://turmalinaschema.org/BudgetRevenue">
+    <table itemscope itemtype="https://turmalinaschema.vercel.app/documentation/budgetRevenue">
         <!-- Cabeçalho da tabela  -->
         <tr>
             <th itemprop="managementUnitName">Nome da unidade gestora</th>
@@ -52,7 +52,7 @@ export class BudgetRevenueComponent {
     Esse é um exemplo em HTML utilizando div
     
     \`\`\`html
-    <div itemscope itemtype="http://turmalinaschema.org/BudgetRevenue">
+    <div itemscope itemtype="https://turmalinaschema.vercel.app/documentation/budgetRevenue">
         <!-- Cabeçalho da tabela  -->
         <div>
             <div itemprop="managementUnitName">Nome da unidade gestora</div>

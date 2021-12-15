@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/turmalina-app'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('./src/index.html', {root: 'dist/turmalina-app/'}),
+    res.sendFile('index.html', {root: 'dist/turmalina-app/'}),
 );
 
 // Start the app by listening on the default Heroku port
